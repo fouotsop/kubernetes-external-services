@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: helloworld-nodeport
+spec:
+  selector:
+    app: helloworld
+  ports:
+    - port: 8080
+      targetPort: helloworld-port
